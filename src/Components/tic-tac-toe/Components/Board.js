@@ -9,16 +9,16 @@ function Board({squares, winnerText, handleClick, gameOver, resetGame}) {
 
     return (
         <div>
-            <div className="d-flex justify-content-center mt-5 mb-3">
+            <div className="d-flex justify-content-center mb-3">
                 <div className="text-center">
-                <img src="title.png" alt="loading" className="image"/>
+                <img src="pictures/tic-tac-toe/title.png" alt="loading" className="image"/>
                </div>
 
             </div>
             <div className="board-row">{squaresComp.slice(0, 3)}</div>
             <div className="board-row">{squaresComp.slice(3, 6)}</div>
             <div className="board-row">{squaresComp.slice(6, 9)}</div>
-            <div className="d-flex justify-content-center mt-5">
+            <div className="container-fluid justify-content-center mt-5">
             </div>
               <Settings resetGame={resetGame}/>
               <h3 className="mt-5 text-center"><strong>{winnerText}</strong></h3>

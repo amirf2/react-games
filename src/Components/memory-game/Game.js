@@ -13,7 +13,7 @@ class Game extends Component {
         sidebarOpen: false,
         imageType: "cats",
         gameLevel: "hard",
-        game: () => <MemoryGame imageType={this.state.imageType} gameLevel={this.state.gameLevel}/>
+        gameID: 0
     };
     
   }
@@ -27,12 +27,10 @@ class Game extends Component {
   } 
 
   handleResetGame = (event) => {
-    this.setState({game: ()=> <MemoryGame imageType={this.state.imageType} gameLevel={this.state.gameLevel}/>})
+    this.setState((prevState) => ({gameID: prevState.gameID+1}))
   } 
 
   render(){
-
-    const MemoryGame = this.state.game;
 
     return (
       <div  className="container">
@@ -44,7 +42,7 @@ class Game extends Component {
           imageType={this.state.imageType} 
           gameLevel={this.state.gameLevel} 
         />
-        <MemoryGame/>
+        <MemoryGame imageType={this.state.imageType} gameLevel={this.state.gameLevel} gameID={this.state.gameID}/>
         </div>
     )
   }

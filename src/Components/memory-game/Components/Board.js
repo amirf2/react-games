@@ -21,7 +21,7 @@ class Board extends Component {
             {fireworks}
             <div className="container-fluid">  
               <div className="text-center">
-               <img src="pictures/titles/logo.png" alt="loading" className="image"/>
+               <img src="pictures/memory-game/titles/logo.png" alt="loading" className="image"/>
                </div>
                   <div className="row">
                      {images}

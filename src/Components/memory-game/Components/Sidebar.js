@@ -28,7 +28,7 @@ class Bar extends Component {
         <Sidebar
           sidebar={
             <div className="padding">
-               <img src="pictures/titles/settings.png" style={{width: "100%"}} alt="none" />
+               <img src="pictures/memory-game/titles/settings.png" style={{width: "100%"}} alt="none" />
                 <br/><br/>
               <Settings 
                 handleLevelChange={this.props.handleLevelChange} 
@@ -44,7 +44,7 @@ class Bar extends Component {
           styles={{ sidebar: { background: "DeepSkyBlue" , width: 200}}}
           touchHandleWidth={0}
         >
-        <img className={hamburgerButtonStyle}  src="pictures/structure/hamburger.png"  alt="loading" style={{width: "8%", }} onClick={() => this.onSetSidebarOpen(true)} />
+        <img className={hamburgerButtonStyle}  src="pictures/memory-game/structure/hamburger.png"  alt="loading" style={{width: "8%", }} onClick={() => this.onSetSidebarOpen(true)} />
       </Sidebar>
       </div>
     )

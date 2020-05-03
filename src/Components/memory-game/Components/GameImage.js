@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const hidden = "pictures/structure/hidden.png"
+const hidden = "pictures/memory-game/structure/hidden.png"
 const gridStyleHard = "col-3 col-md-2"
 const gridStyleAdvanced = "col-4 col-md-2"
 const gridStyleMedium = "col-4 col-md-3"

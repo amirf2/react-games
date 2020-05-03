@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-const typeTitle = "pictures/titles/type.png"
-const levelTitle = "pictures/titles/level.png"
+const typeTitle = "pictures/memory-game/titles/type.png"
+const levelTitle = "pictures/memory-game/titles/level.png"
 
 
 class Option extends Component {
